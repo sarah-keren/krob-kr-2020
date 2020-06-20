@@ -1,0 +1,117 @@
+reading /home/sarah/Documents/gitrepos/UMD-APK/paper-examples/problem-files-with-wumpus/wumpus-a/domain.pddl...
+reading /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--UMD-APK---paper-examples---problem-files-with-wumpus--fdhmaxcachetrans/gen/problem_0.pddl...
+[35;1mstrongly-static predicates:[0m 'adj'
+instantiating action 'move' ... 48 action(s)
+instantiating action 'grab-gold' ... 16 action(s)
+instantiating sensor 'sensor-for-stench' ... 16 sensor(s)
+instantiating sensor 'sensor-for-breeze' ... 16 sensor(s)
+instantiating observables ... done
+instantiating stickies ... done
+instantiating p.o. problem...
+calculating 1 hidden state(s)
+preprocessing p.o. problem...
+creating KP translation...
+preprocessing KP translation...
+kp-instance (type=standard): #standard-actions=49, #sensor-actions=64, #invariant-actions=400, #subgoaling-actions=1
+Optimal planner:: fd:hmaxcachetrans
+solving problem for 1 hidden state(s)
+hidden[0]={gold_p_3_3,at_p_1_1,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4}
+>>> initial state={(K_gold_p_3_3),(K_at_p_1_1),(K_alive),(K_not_stench_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_3),(K_safe_p_3_1),(K_safe_p_4_1),(K_safe_p_4_2),(K_safe_p_4_3),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> initial hidden={gold_p_3_3,at_p_1_1,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4}
+before calling planner
+in classical get plan
+calling fd (n=1, acc-time=0)...
+FD planner config: fd:hmaxcachetrans
+ Command is/home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/fast-downward.py /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--UMD-APK---paper-examples---problem-files-with-wumpus--fdhmaxcachetrans/gen/gen-d12706.pddl /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--UMD-APK---paper-examples---problem-files-with-wumpus--fdhmaxcachetrans/gen/gen-p12706.pddl --search "astar(hmax(transform=no_transform(), cache_estimates=true))" >fd_output
+invariant-at-least-one-78
+invariant-at-least-one-76
+invariant-at-least-one-96
+move_p_1_1_p_2_1
+move_p_2_1_p_3_1
+move_p_3_1_p_4_1
+move_p_4_1_p_4_2
+move_p_4_2_p_4_3
+sensor-sensor-for-breeze_p_4_3-obs0-ver1
+sensor-sensor-for-stench_p_4_3-obs0-ver1
+invariant-at-least-one-228
+invariant-at-least-one-226
+invariant-at-least-one-238
+move_p_4_3_p_3_3
+grab-gold_p_3_3
+reach_new_goal_through_original_goal__
+Classical plan (raw):
+    step 0: 417.invariant-at-least-one-78
+    step 1: 428.invariant-at-least-one-76
+    step 2: 408.invariant-at-least-one-96
+    step 3: 46.move_p_1_1_p_2_1
+    step 4: 35.move_p_2_1_p_3_1
+    step 5: 21.move_p_3_1_p_4_1
+    step 6: 8.move_p_4_1_p_4_2
+    step 7: 5.move_p_4_2_p_4_3
+    step 8: 84.sensor-sensor-for-breeze_p_4_3-obs0-ver1
+    step 9: 52.sensor-sensor-for-stench_p_4_3-obs0-ver1
+    step 10: 260.invariant-at-least-one-228
+    step 11: 274.invariant-at-least-one-226
+    step 12: 246.invariant-at-least-one-238
+    step 13: 4.move_p_4_3_p_3_3
+    step 14: 48.grab-gold_p_3_3
+    step 15: 513.reach_new_goal_through_original_goal__
+Classical plan (reduced):
+    step 0: 46.move_p_1_1_p_2_1
+    step 1: 35.move_p_2_1_p_3_1
+    step 2: 21.move_p_3_1_p_4_1
+    step 3: 8.move_p_4_1_p_4_2
+    step 4: 5.move_p_4_2_p_4_3
+    step 5: 4.move_p_4_3_p_3_3
+    step 6: 48.grab-gold_p_3_3
+    step 7: 513.reach_new_goal_through_original_goal__
+after calling planner
+Assumptions (sz=8):
+    step=0, 46.move_p_1_1_p_2_1: {(K_at_p_1_1),(K_safe_p_2_1)}
+    step=1, 35.move_p_2_1_p_3_1: {(K_at_p_2_1)}
+    step=2, 21.move_p_3_1_p_4_1: {(K_at_p_3_1)}
+    step=3, 8.move_p_4_1_p_4_2: {(K_at_p_4_1)}
+    step=4, 5.move_p_4_2_p_4_3: {(K_at_p_4_2)}
+    step=5, 4.move_p_4_3_p_3_3: {(K_safe_p_3_3),(K_at_p_4_3)}
+    step=6, 48.grab-gold_p_3_3: {(K_gold_p_3_3),(K_at_p_3_3)}
+    step=7, 513.reach_new_goal_through_original_goal__: {(K_have-gold)}
+>>> kp-action=move_p_1_1_p_2_1 [action=move_p_1_1_p_2_1]
+>>> state={(K_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_not_pit_p_2_2),(K_safe_p_2_2),(K_not_wumpus_p_3_1),(K_not_pit_p_3_1),(K_safe_p_3_1),(K_safe_p_4_1),(K_safe_p_4_2),(K_safe_p_4_3),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> hidden={gold_p_3_3,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_2_1}
+>>> kp-action=move_p_2_1_p_3_1 [action=move_p_2_1_p_3_1]
+>>> state={(K_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_not_pit_p_2_2),(K_safe_p_2_2),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_not_pit_p_3_2),(K_not_pit_p_4_1),(K_safe_p_4_1),(K_safe_p_4_2),(K_safe_p_4_3),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> hidden={gold_p_3_3,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_3_1}
+>>> kp-action=move_p_3_1_p_4_1 [action=move_p_3_1_p_4_1]
+>>> state={(K_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_stench_p_2_2),(K_not_pit_p_2_2),(K_safe_p_2_2),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_wumpus_p_3_2),(K_not_pit_p_3_2),(K_stench_p_3_3),(K_not_wumpus_p_4_1),(K_not_stench_p_4_1),(K_not_pit_p_4_1),(K_not_breeze_p_4_1),(K_safe_p_4_1),(K_not_wumpus_p_4_2),(K_stench_p_4_2),(K_not_pit_p_4_2),(K_safe_p_4_2),(K_safe_p_4_3),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> hidden={gold_p_3_3,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_4_1}
+>>> kp-action=move_p_4_1_p_4_2 [action=move_p_4_1_p_4_2]
+>>> state={(K_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_stench_p_2_2),(K_not_pit_p_2_2),(K_safe_p_2_2),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_wumpus_p_3_2),(K_not_pit_p_3_2),(K_stench_p_3_3),(K_not_wumpus_p_4_1),(K_not_stench_p_4_1),(K_not_pit_p_4_1),(K_not_breeze_p_4_1),(K_safe_p_4_1),(K_not_wumpus_p_4_2),(K_stench_p_4_2),(K_not_pit_p_4_2),(K_not_breeze_p_4_2),(K_safe_p_4_2),(K_not_pit_p_4_3),(K_safe_p_4_3),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> hidden={gold_p_3_3,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_4_2}
+>>> kp-action=move_p_4_2_p_4_3 [action=move_p_4_2_p_4_3]
+>>> state={(K_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_stench_p_2_2),(K_not_pit_p_2_2),(K_safe_p_2_2),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_wumpus_p_3_2),(K_not_stench_p_3_2),(K_not_pit_p_3_2),(K_not_breeze_p_3_2),(K_not_wumpus_p_3_3),(K_stench_p_3_3),(K_not_pit_p_3_3),(K_safe_p_3_3),(K_not_wumpus_p_4_1),(K_not_stench_p_4_1),(K_not_pit_p_4_1),(K_not_breeze_p_4_1),(K_safe_p_4_1),(K_not_wumpus_p_4_2),(K_stench_p_4_2),(K_not_pit_p_4_2),(K_not_breeze_p_4_2),(K_safe_p_4_2),(K_not_wumpus_p_4_3),(K_not_stench_p_4_3),(K_not_pit_p_4_3),(K_not_breeze_p_4_3),(K_safe_p_4_3),(K_not_wumpus_p_4_4),(K_not_pit_p_4_4),(K_safe_p_4_4),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> hidden={gold_p_3_3,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_4_3}
+>>> kp-action=move_p_4_3_p_3_3 [action=move_p_4_3_p_3_3]
+>>> state={(K_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_stench_p_2_2),(K_not_pit_p_2_2),(K_not_breeze_p_2_2),(K_safe_p_2_2),(K_not_pit_p_2_3),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_wumpus_p_3_2),(K_not_stench_p_3_2),(K_not_pit_p_3_2),(K_not_breeze_p_3_2),(K_not_wumpus_p_3_3),(K_stench_p_3_3),(K_not_pit_p_3_3),(K_not_breeze_p_3_3),(K_safe_p_3_3),(K_not_pit_p_3_4),(K_not_wumpus_p_4_1),(K_not_stench_p_4_1),(K_not_pit_p_4_1),(K_not_breeze_p_4_1),(K_safe_p_4_1),(K_not_wumpus_p_4_2),(K_stench_p_4_2),(K_not_pit_p_4_2),(K_not_breeze_p_4_2),(K_safe_p_4_2),(K_not_wumpus_p_4_3),(K_not_stench_p_4_3),(K_not_pit_p_4_3),(K_not_breeze_p_4_3),(K_safe_p_4_3),(K_not_wumpus_p_4_4),(K_not_pit_p_4_4),(K_not_breeze_p_4_4),(K_safe_p_4_4),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> hidden={gold_p_3_3,alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_3_3}
+>>> kp-action=grab-gold_p_3_3 [action=grab-gold_p_3_3]
+>>> state={(K_not_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_stench_p_2_2),(K_not_pit_p_2_2),(K_not_breeze_p_2_2),(K_safe_p_2_2),(K_not_pit_p_2_3),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_wumpus_p_3_2),(K_not_stench_p_3_2),(K_not_pit_p_3_2),(K_not_breeze_p_3_2),(K_not_wumpus_p_3_3),(K_stench_p_3_3),(K_not_pit_p_3_3),(K_not_breeze_p_3_3),(K_safe_p_3_3),(K_not_pit_p_3_4),(K_not_wumpus_p_4_1),(K_not_stench_p_4_1),(K_not_pit_p_4_1),(K_not_breeze_p_4_1),(K_safe_p_4_1),(K_not_wumpus_p_4_2),(K_stench_p_4_2),(K_not_pit_p_4_2),(K_not_breeze_p_4_2),(K_safe_p_4_2),(K_not_wumpus_p_4_3),(K_not_stench_p_4_3),(K_not_pit_p_4_3),(K_not_breeze_p_4_3),(K_safe_p_4_3),(K_not_wumpus_p_4_4),(K_not_pit_p_4_4),(K_not_breeze_p_4_4),(K_safe_p_4_4),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_have-gold)}
+>>> hidden={alive,safe_p_1_1,safe_p_1_2,safe_p_1_3,safe_p_1_4,safe_p_2_1,stench_p_2_2,safe_p_2_2,safe_p_2_3,safe_p_2_4,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_3_4,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3,safe_p_4_4,at_p_3_3,have-gold}
+>>> kp-action=reach_new_goal_through_original_goal__ [subgoaling action]
+ state={(K_not_gold_p_3_3),(K_not_at_p_1_1),(K_alive),(K_not_wumpus_p_1_1),(K_not_stench_p_1_1),(K_not_pit_p_1_1),(K_not_breeze_p_1_1),(K_safe_p_1_1),(K_not_wumpus_p_1_2),(K_not_pit_p_1_2),(K_safe_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_stench_p_2_1),(K_not_pit_p_2_1),(K_not_breeze_p_2_1),(K_safe_p_2_1),(K_not_wumpus_p_2_2),(K_stench_p_2_2),(K_not_pit_p_2_2),(K_not_breeze_p_2_2),(K_safe_p_2_2),(K_not_pit_p_2_3),(K_not_wumpus_p_3_1),(K_stench_p_3_1),(K_not_pit_p_3_1),(K_not_breeze_p_3_1),(K_safe_p_3_1),(K_wumpus_p_3_2),(K_not_stench_p_3_2),(K_not_pit_p_3_2),(K_not_breeze_p_3_2),(K_not_wumpus_p_3_3),(K_stench_p_3_3),(K_not_pit_p_3_3),(K_not_breeze_p_3_3),(K_safe_p_3_3),(K_not_pit_p_3_4),(K_not_wumpus_p_4_1),(K_not_stench_p_4_1),(K_not_pit_p_4_1),(K_not_breeze_p_4_1),(K_safe_p_4_1),(K_not_wumpus_p_4_2),(K_stench_p_4_2),(K_not_pit_p_4_2),(K_not_breeze_p_4_2),(K_safe_p_4_2),(K_not_wumpus_p_4_3),(K_not_stench_p_4_3),(K_not_pit_p_4_3),(K_not_breeze_p_4_3),(K_safe_p_4_3),(K_not_wumpus_p_4_4),(K_not_pit_p_4_4),(K_not_breeze_p_4_4),(K_safe_p_4_4),(K_not_at_p_1_2),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_have-gold),(new-goal)}
+PLAN: init*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1
+         0 : move_p_1_1_p_2_1
+         0*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1 sensor-for-stench_p_2_1 sensor-for-breeze_p_2_1
+         1 : move_p_2_1_p_3_1
+         1*: sensor-for-stench_p_3_1 sensor-for-breeze_p_3_1
+         2 : move_p_3_1_p_4_1
+         2*: sensor-for-stench_p_4_1 sensor-for-breeze_p_4_1
+         3 : move_p_4_1_p_4_2
+         3*: sensor-for-stench_p_4_2 sensor-for-breeze_p_4_2
+         4 : move_p_4_2_p_4_3
+         4*: sensor-for-stench_p_4_3 sensor-for-breeze_p_4_3
+         5 : move_p_4_3_p_3_3
+         5*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+         6 : grab-gold_p_3_3
+         6*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+stats: fd:hmaxcachetrans (planner) 7 (plan-size) 1 (planner-calls) 0.004944 (preprocessing-time) 0.254147 (planner-time) 0 (planner-search-time) 0.255087 (instance-time) 0.260226 (total-acc-time)
+

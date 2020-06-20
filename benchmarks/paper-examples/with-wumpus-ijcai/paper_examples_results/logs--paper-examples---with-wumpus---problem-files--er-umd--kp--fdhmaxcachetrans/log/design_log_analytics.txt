@@ -1,0 +1,27 @@
+2020-01-12 17:17:15,904 Running instance_id:paper-examples---with-wumpus---problem-files---wumpus-a-parsed_hyps_0.dat, utility:er-umd, design_budget:0, search_method_name:bfd, heuristic:NA, pruning_methods_name:None, solver_path:/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src, compilation:kp, planner_type:fd:hmaxcachetrans
+2020-01-12 17:17:15,904 Starting: best_first_design
+2020-01-12 17:17:15,904 best_first_design(node) node number 1 cur_node:<Node[]>hval:-1.00
+2020-01-12 17:17:15,904 Getting get_PO_cost: index:0
+2020-01-12 17:17:16,169 InMethod solve: index:0, has_solution:True, number_of_planner_calls:1, number_of_assumptions:22, plan_length:7, opop_plan_length=7, calc_time=0.26
+2020-01-12 17:17:16,169 Getting get_FO_cost: index:0
+2020-01-12 17:17:16,173 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.00
+2020-01-12 17:17:16,180 InMethod best_first_design(node): explored_count:1 cur_node:<Node[]>hval:-1.00, node_eval_time:0.269, cur_value:7.000, best_node:<Node[]>hval:-1.00, best_value:7.000, pre_prune_succ_count:0, prun_func_time:0.000, succ_count:0, succ_calc_time:0.000
+2020-01-12 17:17:16,180 Ending: best_first_design: {best_value:7, best_node:<Node[]>hval:-1.00, explored_count:1, ex_terminated:False, calc_time:0.276}
+2020-01-12 17:17:21,466 Running instance_id:paper-examples---with-wumpus---problem-files---wumpus-b-parsed_hyps_0.dat, utility:er-umd, design_budget:0, search_method_name:bfd, heuristic:NA, pruning_methods_name:None, solver_path:/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src, compilation:kp, planner_type:fd:hmaxcachetrans
+2020-01-12 17:17:21,466 Starting: best_first_design
+2020-01-12 17:17:21,466 best_first_design(node) node number 1 cur_node:<Node[]>hval:-1.00
+2020-01-12 17:17:21,466 Getting get_PO_cost: index:0
+2020-01-12 17:17:21,807 InMethod solve: index:0, has_solution:True, number_of_planner_calls:1, number_of_assumptions:22, plan_length:7, opop_plan_length=7, calc_time=0.34
+2020-01-12 17:17:21,807 Getting get_FO_cost: index:0
+2020-01-12 17:17:21,811 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.00
+2020-01-12 17:17:21,819 InMethod best_first_design(node): explored_count:1 cur_node:<Node[]>hval:-1.00, node_eval_time:0.345, cur_value:7.000, best_node:<Node[]>hval:-1.00, best_value:7.000, pre_prune_succ_count:0, prun_func_time:0.000, succ_count:0, succ_calc_time:0.000
+2020-01-12 17:17:21,819 Ending: best_first_design: {best_value:7, best_node:<Node[]>hval:-1.00, explored_count:1, ex_terminated:False, calc_time:0.353}
+2020-01-12 17:17:44,750 Running instance_id:paper-examples---with-wumpus---problem-files---wumpus-c-parsed_hyps_0.dat, utility:er-umd, design_budget:0, search_method_name:bfd, heuristic:NA, pruning_methods_name:None, solver_path:/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src, compilation:kp, planner_type:fd:hmaxcachetrans
+2020-01-12 17:17:44,750 Starting: best_first_design
+2020-01-12 17:17:44,750 best_first_design(node) node number 1 cur_node:<Node[]>hval:-1.00
+2020-01-12 17:17:44,751 Getting get_PO_cost: index:0
+2020-01-12 17:17:45,804 InMethod solve: index:0, has_solution:True, number_of_planner_calls:3, number_of_assumptions:51, plan_length:10, opop_plan_length=4, calc_time=1.05
+2020-01-12 17:17:45,804 Getting get_FO_cost: index:0
+2020-01-12 17:17:45,809 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.00
+2020-01-12 17:17:45,818 InMethod best_first_design(node): explored_count:1 cur_node:<Node[]>hval:-1.00, node_eval_time:1.059, cur_value:10.000, best_node:<Node[]>hval:-1.00, best_value:10.000, pre_prune_succ_count:0, prun_func_time:0.000, succ_count:0, succ_calc_time:0.000
+2020-01-12 17:17:45,818 Ending: best_first_design: {best_value:10, best_node:<Node[]>hval:-1.00, explored_count:1, ex_terminated:False, calc_time:1.068}

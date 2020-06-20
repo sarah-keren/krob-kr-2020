@@ -1,0 +1,158 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python /home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/builds/release/bin/translate/translate.py /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--wumpus_key---wumpus_key_only_safe_5-5-1-----his--kp--fdhmaxcachetrans/gen/gen-d4754.pddl /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--wumpus_key---wumpus_key_only_safe_5-5-1-----his--kp--fdhmaxcachetrans/gen/gen-p4754.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.110s CPU, 0.111s wall-clock]
+Normalizing task... [0.020s CPU, 0.014s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.009s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.030s CPU, 0.030s wall-clock]
+Preparing model... [0.030s CPU, 0.035s wall-clock]
+Generated 2498 rules.
+Computing model... [0.010s CPU, 0.011s wall-clock]
+1814 relevant atoms
+0 auxiliary atoms
+1814 final queue length
+2923 total queue pushes
+Completing instantiation... [0.020s CPU, 0.019s wall-clock]
+Instantiating: [0.100s CPU, 0.107s wall-clock]
+Computing fact groups...
+Finding invariants...
+541 initial candidates
+Finding invariants: [0.480s CPU, 0.477s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+514 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.002s wall-clock]
+Computing fact groups: [0.480s CPU, 0.484s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.002s wall-clock]
+Translating task: [0.070s CPU, 0.064s wall-clock]
+680 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+428 operators removed
+0 axioms removed
+286 propositions removed
+Detecting unreachable propositions: [0.030s CPU, 0.027s wall-clock]
+Reordering and filtering variables...
+223 of 374 variables necessary.
+1 of 3 mutex groups necessary.
+669 of 1993 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.008s wall-clock]
+Translator variables: 223
+Translator derived variables: 0
+Translator facts: 469
+Translator goal facts: 1
+Translator mutex groups: 1
+Translator total mutex groups size: 2
+Translator operators: 669
+Translator axioms: 0
+Translator task size: 3688
+Translator peak memory: 63812 KB
+Writing output... [0.000s CPU, 0.004s wall-clock]
+Done! [0.820s CPU, 0.823s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/builds/release/bin/downward --search 'astar(hmax(transform=no_transform(), cache_estimates=true))' --internal-plan-file sas_plan < output.sas
+reading input... [t=1.8123e-05s]
+done reading input! [t=0.00192015s]
+Simplifying 697 unary operators... done! [693 unary operators]
+time to simplify: 0.000333645s
+Initializing HSP max heuristic...
+Building successor generator...done! [t=0.00331609s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 0.000218073s
+Variables: 223
+FactPairs: 469
+Bytes per state: 32
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 31
+[g=0, 1 evaluated, 0 expanded, t=0.00344205s, 22424 KB]
+f = 31 [1 evaluated, 0 expanded, t=0.00346146s, 22424 KB]
+Initial heuristic value for hmax(transform = no_transform, cache_estimates = true): 31
+pruning method: none
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 30
+[g=1, 3 evaluated, 1 expanded, t=0.00353797s, 22424 KB]
+f = 32 [8 evaluated, 2 expanded, t=0.0036204s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 29
+[g=3, 10 evaluated, 3 expanded, t=0.00366706s, 22424 KB]
+f = 33 [21 evaluated, 5 expanded, t=0.00382384s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 28
+[g=5, 27 evaluated, 8 expanded, t=0.00393939s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 27
+[g=6, 30 evaluated, 9 expanded, t=0.00400088s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 26
+[g=7, 31 evaluated, 10 expanded, t=0.00404371s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 25
+[g=8, 35 evaluated, 11 expanded, t=0.0041111s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 24
+[g=9, 42 evaluated, 12 expanded, t=0.00424314s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 23
+[g=10, 48 evaluated, 13 expanded, t=0.00434743s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 22
+[g=11, 51 evaluated, 14 expanded, t=0.00441494s, 22424 KB]
+f = 34 [68 evaluated, 20 expanded, t=0.00471004s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 21
+[g=13, 70 evaluated, 21 expanded, t=0.00476924s, 22424 KB]
+f = 35 [167 evaluated, 53 expanded, t=0.00646222s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 20
+[g=15, 193 evaluated, 58 expanded, t=0.00687653s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 19
+[g=16, 201 evaluated, 59 expanded, t=0.00705882s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 18
+[g=17, 203 evaluated, 60 expanded, t=0.00712149s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 17
+[g=18, 211 evaluated, 61 expanded, t=0.00724637s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 16
+[g=19, 224 evaluated, 62 expanded, t=0.0074528s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 15
+[g=20, 237 evaluated, 63 expanded, t=0.00764536s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 14
+[g=21, 241 evaluated, 64 expanded, t=0.00773317s, 22424 KB]
+f = 36 [477 evaluated, 133 expanded, t=0.0115538s, 22424 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 13
+[g=23, 479 evaluated, 134 expanded, t=0.0116316s, 22424 KB]
+f = 37 [1414 evaluated, 362 expanded, t=0.0290811s, 22564 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 12
+[g=25, 1445 evaluated, 366 expanded, t=0.0297112s, 22564 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 11
+[g=26, 1458 evaluated, 367 expanded, t=0.0299762s, 22564 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 10
+[g=27, 1462 evaluated, 368 expanded, t=0.0300934s, 22564 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 9
+[g=28, 1472 evaluated, 369 expanded, t=0.0302827s, 22564 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 8
+[g=29, 1488 evaluated, 370 expanded, t=0.0305778s, 22564 KB]
+f = 38 [4004 evaluated, 1029 expanded, t=0.0731761s, 22700 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 7
+[g=31, 4011 evaluated, 1030 expanded, t=0.0733237s, 22700 KB]
+f = 39 [10816 evaluated, 2837 expanded, t=0.183778s, 23104 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 6
+[g=33, 11319 evaluated, 2924 expanded, t=0.190039s, 23240 KB]
+f = 40 [27312 evaluated, 7426 expanded, t=0.487152s, 24172 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 5
+[g=35, 27316 evaluated, 7427 expanded, t=0.487262s, 24172 KB]
+f = 41 [64490 evaluated, 18370 expanded, t=1.089s, 27068 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 4
+[g=37, 64559 evaluated, 18376 expanded, t=1.09011s, 27068 KB]
+Peak memory: 31748 KB
+caught signal 2 -- exiting

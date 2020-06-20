@@ -1,0 +1,109 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python /home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/builds/release/bin/translate/translate.py /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--dataset-JAIR---paper-examples---JAIR--er-umd--kp--fd/gen/gen-d8467.pddl /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--dataset-JAIR---paper-examples---JAIR--er-umd--kp--fd/gen/gen-p8467.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.060s CPU, 0.062s wall-clock]
+Normalizing task... [0.010s CPU, 0.006s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.005s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.020s CPU, 0.011s wall-clock]
+Preparing model... [0.020s CPU, 0.024s wall-clock]
+Generated 1709 rules.
+Computing model... [0.010s CPU, 0.017s wall-clock]
+1089 relevant atoms
+0 auxiliary atoms
+1089 final queue length
+1750 total queue pushes
+Completing instantiation... [0.020s CPU, 0.013s wall-clock]
+Instantiating: [0.070s CPU, 0.073s wall-clock]
+Computing fact groups...
+Finding invariants...
+281 initial candidates
+Finding invariants: [0.490s CPU, 0.489s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+252 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.500s CPU, 0.492s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.030s CPU, 0.036s wall-clock]
+176 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+215 operators removed
+0 axioms removed
+62 propositions removed
+Detecting unreachable propositions: [0.020s CPU, 0.018s wall-clock]
+Reordering and filtering variables...
+189 of 224 variables necessary.
+1 of 4 mutex groups necessary.
+545 of 1697 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.005s wall-clock]
+Translator variables: 189
+Translator derived variables: 0
+Translator facts: 401
+Translator goal facts: 1
+Translator mutex groups: 1
+Translator total mutex groups size: 2
+Translator operators: 545
+Translator axioms: 0
+Translator task size: 2943
+Translator peak memory: 60972 KB
+Writing output... [0.000s CPU, 0.003s wall-clock]
+Done! [0.700s CPU, 0.697s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/builds/release/bin/downward --search 'astar(hmax(transform=adapt_costs(NORMAL), cache_estimates=true))' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.4245e-05s]
+done reading input! [t=0.00153595s]
+Simplifying 546 unary operators... done! [541 unary operators]
+time to simplify: 0.000245168s
+Initializing HSP max heuristic...
+Building successor generator...done! [t=0.00277362s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 0.000171115s
+Variables: 189
+FactPairs: 401
+Bytes per state: 28
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initial state is a dead end.
+Initial heuristic value for hmax(transform = adapt_costs(normal), cache_estimates = true): infinity
+pruning method: none
+Completely explored state space -- no solution!
+Actual search time: 3.651e-06s [t=0.00288699s]
+Expanded 0 state(s).
+Reopened 0 state(s).
+Evaluated 1 state(s).
+Evaluations: 1
+Generated 0 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 1
+Int hash set load factor: 1/1 = 1
+Int hash set resizes: 0
+Search time: 4.9465e-05s
+Total time: 0.00289424s
+Search stopped without finding a solution.
+Peak memory: 22416 KB
+Remove intermediate file output.sas
+
+search exit code: 12
+Driver aborting after search

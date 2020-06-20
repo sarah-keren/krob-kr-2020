@@ -1,0 +1,28 @@
+
+----------------------
+Designing domain::/home/sarah/Documents/gitrepos/UMD-APK/paper-examples/with-wumpus/problem-files/b/wumpus-b/domain.pddl
+template::/home/sarah/Documents/gitrepos/UMD-APK/paper-examples/with-wumpus/problem-files/b/wumpus-b/template.pddl
+hyps::/home/sarah/Documents/gitrepos/UMD-APK/paper-examples/with-wumpus/problem-files/b/wumpus-b/hyps.dat
+budget::0
+method::bfd
+heuristic::NA
+pruning::NA
+solver::replanner
+planner::fd:hmaxcachetrans
+compilation::kp
+Best_value_for_cost-0: cur_value::8 cur_node::<Node[]>hval:-1.00 calc_time::0.89 explored::1
+Total_best_value:8.00  best_node:<Node[]>hval:-1.00 cost:0.00 explored:1 time:0.900237 ex_terminated:False
+
+----------------------
+Designing domain::/home/sarah/Documents/gitrepos/UMD-APK/paper-examples/with-wumpus/problem-files/b/wumpus-b/domain.pddl
+template::/home/sarah/Documents/gitrepos/UMD-APK/paper-examples/with-wumpus/problem-files/b/wumpus-b/template.pddl
+hyps::/home/sarah/Documents/gitrepos/UMD-APK/paper-examples/with-wumpus/problem-files/b/wumpus-b/hyps.dat
+budget::0
+method::bfd
+heuristic::NA
+pruning::NA
+solver::replanner
+planner::fd:hmaxcachetrans
+compilation::kprudent
+Best_value_for_cost-0: cur_value::6 cur_node::<Node[]>hval:-1.00 calc_time::1.13 explored::1
+Total_best_value:6.00  best_node:<Node[]>hval:-1.00 cost:0.00 explored:1 time:1.133849 ex_terminated:False

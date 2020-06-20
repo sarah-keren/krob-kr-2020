@@ -1,0 +1,179 @@
+Wumpus a:
+---------
+kp:
+	initial:
+		invariant-at-least-one-78 (K_not_breeze_p_1_1) ==> :precondition (and (not (K_pit_p_2_1)) (K_not_breeze_p_1_1)): effect (K_not_pit_p_2_1))
+		invariant-at-least-one-76 (K_not_stench_p_1_1) ==> :precondition (and (not (K_wumpus_p_2_1)) (K_not_stench_p_1_1)): effect (K_not_wumpus_p_2_1))
+		invariant-at-least-one-96 (K_not_wumpus_p_2_1) (K_not_pit_p_2_1)  ==> :precondition (and (K_not_wumpus_p_2_1) (K_not_pit_p_2_1)) :effect (K_safe_p_2_1)) 
+		move_p_1_1_p_2_1 
+		move_p_2_1_p_3_1
+		move_p_3_1_p_4_1
+		move_p_4_1_p_4_2
+		move_p_4_2_p_4_3
+		sensor-sensor-for-breeze_p_4_3-obs0-ver1
+		sensor-sensor-for-stench_p_4_3-obs0-ver1
+		invariant-at-least-one-228 (K_not_breeze_p_4_3) ==>:precondition (and (not (K_pit_p_3_3)) (K_not_breeze_p_4_3))
+ 		invariant-at-least-one-226 (K_not_stench_p_4_3) ==>:precondition (and (not (K_wumpus_p_3_3)) (K_not_stench_p_4_3)):effect (K_not_wumpus_p_3_3))
+		invariant-at-least-one-238 (K_not_wumpus_p_3_3) (K_not_pit_p_3_3)  ==> :precondition (and (K_not_wumpus_p_3_3) (K_not_pit_p_3_3)):effect (K_safe_p_3_3))
+		move_p_4_3_p_3_3
+		grab-gold_p_3_3
+		reach_new_goal_through_original_goal__
+        total:
+		>>> kp-action=move_p_1_1_p_2_1 [action=move_p_1_1_p_2_1]
+		>>> kp-action=move_p_2_1_p_3_1 [action=move_p_2_1_p_3_1]
+		>>> kp-action=move_p_3_1_p_4_1 [action=move_p_3_1_p_4_1]
+		>>> kp-action=move_p_3_1_p_4_1 [action=move_p_3_1_p_4_1]
+		>>> kp-action=move_p_4_1_p_4_2 [action=move_p_4_1_p_4_2]
+		>>> kp-action=move_p_4_2_p_4_3 [action=move_p_4_2_p_4_3]
+		>>> kp-action=move_p_4_3_p_3_3 [action=move_p_4_3_p_3_3]
+		>>> kp-action=grab-gold_p_3_3 [action=grab-gold_p_3_3]
+		>>> kp-action=reach_new_goal_through_original_goal__ [subgoaling action]
+
+	PLAN: init*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1
+         	0 : move_p_1_1_p_2_1
+         	0*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1 sensor-for-stench_p_2_1 sensor-for-breeze_p_2_1
+         	1 : move_p_2_1_p_3_1
+         	1*: sensor-for-stench_p_3_1 sensor-for-breeze_p_3_1
+         	2 : move_p_3_1_p_4_1
+         	2*: sensor-for-stench_p_4_1 sensor-for-breeze_p_4_1
+         	3 : move_p_4_1_p_4_2
+         	3*: sensor-for-stench_p_4_2 sensor-for-breeze_p_4_2
+         	4 : move_p_4_2_p_4_3
+         	4*: sensor-for-stench_p_4_3 sensor-for-breeze_p_4_3
+         	5 : move_p_4_3_p_3_3
+         	5*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+         	6 : grab-gold_p_3_3
+         	6*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+
+kprundent:
+		intial:
+			invariant-at-least-one-19 (K_not_breeze_p_1_1)  ==> :precondition (and (not (K_pit_p_1_2)) (K_not_breeze_p_1_1)) :effect (K_not_pit_p_1_2))
+			invariant-at-least-one-17 (K_not_stench_p_1_1)  ==> :precondition (and (not (K_wumpus_p_1_2)) (K_not_stench_p_1_1)):effect (K_not_wumpus_p_1_2))
+			invariant-at-least-one-37 (K_not_wumpus_p_1_2) (K_not_pit_p_1_2)  ==> :precondition (and (K_not_wumpus_p_1_2) (K_not_pit_p_1_2)) :effect (K_safe_p_1_2))
+			move_p_1_1_p_1_2
+			move_p_1_2_p_1_3
+			sensor-sensor-for-breeze_p_1_3-obs0-ver1
+			sensor-sensor-for-stench_p_1_3-obs0-ver1
+			invariant-at-least-one-124 (K_not_breeze_p_1_3)  ==> :precondition (and (not (K_pit_p_2_3)) (K_not_breeze_p_1_3)):effect (K_not_pit_p_2_3))
+			invariant-at-least-one-122
+			invariant-at-least-one-146
+			move_p_1_3_p_2_3
+			sensor-sensor-for-breeze_p_2_3-obs0-ver1
+			sensor-sensor-for-stench_p_2_3-obs0-ver1
+			invariant-at-least-one-216
+			invariant-at-least-one-214
+			invariant-at-least-one-238
+			move_p_2_3_p_3_3
+			grab-gold_p_3_3
+
+		total:
+			>>> kp-action=move_p_1_1_p_1_2 [action=move_p_1_1_p_1_2]
+                        >>> kp-action=move_p_1_2_p_1_3 [action=move_p_1_2_p_1_3]
+			>>> kp-action=move_p_1_3_p_2_3 [action=move_p_1_3_p_2_3]
+			>>> kp-action=move_p_2_3_p_3_3 [action=move_p_2_3_p_3_3]
+			>>> kp-action=grab-gold_p_3_3 [action=grab-gold_p_3_3]
+			>>> kp-action=reach_new_goal_through_original_goal__ [subgoaling action]
+
+		PLAN: init*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1
+			 0 : move_p_1_1_p_1_2
+			 0*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1 sensor-for-stench_p_1_2 sensor-for-breeze_p_1_2
+			 1 : move_p_1_2_p_1_3
+			 1*: sensor-for-stench_p_1_3 sensor-for-breeze_p_1_3
+			 2 : move_p_1_3_p_2_3
+			 2*: sensor-for-stench_p_2_3 sensor-for-breeze_p_2_3
+			 3 : move_p_2_3_p_3_3
+			 3*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+			 4 : grab-gold_p_3_3
+			 4*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+
+
+
+Wumpus b:
+---------
+kp:
+
+	initial:
+
+		move_p_1_1_p_2_1
+		move_p_2_1_p_3_1
+		move_p_3_1_p_4_1
+		move_p_4_1_p_4_2
+		move_p_4_2_p_4_3
+		sensor-sensor-for-breeze_p_4_3-obs0-ver1
+		sensor-sensor-for-stench_p_4_3-obs0-ver1
+		invariant-at-least-one-228 (K_not_breeze_p_4_3)  ==> :precondition (and (not (K_pit_p_3_3)) (K_not_breeze_p_4_3)):effect (K_not_pit_p_3_3))
+		invariant-at-least-one-226 (K_not_stench_p_4_3)  ==> :precondition (and (not (K_wumpus_p_3_3)) (K_not_stench_p_4_3)):effect (K_not_wumpus_p_3_3))
+		invariant-at-least-one-238 (K_not_wumpus_p_3_3) (K_not_pit_p_3_3)  ==> :precondition (and (K_not_wumpus_p_3_3) (K_not_pit_p_3_3)) :effect (K_safe_p_3_3))
+		move_p_4_3_p_3_3
+		grab-gold_p_3_3
+		reach_new_goal_through_original_goal__
+
+	total:
+		>>> kp-action=move_p_1_1_p_2_1 [action=move_p_1_1_p_2_1]
+		>>> kp-action=move_p_2_1_p_3_1 [action=move_p_2_1_p_3_1]
+		>>> kp-action=move_p_3_1_p_4_1 [action=move_p_3_1_p_4_1]
+		>>> kp-action=move_p_4_1_p_4_2 [action=move_p_4_1_p_4_2]
+		>>> kp-action=move_p_4_2_p_4_3 [action=move_p_4_2_p_4_3]
+		>>> kp-action=move_p_4_3_p_3_3 [action=move_p_4_3_p_3_3]
+		>>> kp-action=grab-gold_p_3_3 [action=grab-gold_p_3_3]
+
+
+	PLAN: init*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1
+		 0 : move_p_1_1_p_2_1
+		 0*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1 sensor-for-stench_p_2_1 sensor-for-breeze_p_2_1
+		 1 : move_p_2_1_p_3_1
+		 1*: sensor-for-stench_p_3_1 sensor-for-breeze_p_3_1
+		 2 : move_p_3_1_p_4_1
+		 2*: sensor-for-stench_p_4_1 sensor-for-breeze_p_4_1
+		 3 : move_p_4_1_p_4_2
+		 3*: sensor-for-stench_p_4_2 sensor-for-breeze_p_4_2
+		 4 : move_p_4_2_p_4_3
+		 4*: sensor-for-stench_p_4_3 sensor-for-breeze_p_4_3
+		 5 : move_p_4_3_p_3_3
+		 5*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+		 6 : grab-gold_p_3_3
+		 6*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+
+
+kprundent:
+
+
+	initial:
+		invariant-at-least-one-37 ; (K_not_wumpus_p_1_2) (K_not_pit_p_1_2)  ==> :effect (K_safe_p_1_2))
+		move_p_1_1_p_1_2
+		invariant-at-least-one-58 ; (K_not_wumpus_p_1_3) (K_not_pit_p_1_3)  ==> :effect (K_safe_p_1_3))
+		move_p_1_2_p_1_3
+		invariant-at-least-one-146 ; (K_not_wumpus_p_2_3) (K_not_pit_p_2_3)  ==> :effect (K_safe_p_2_3))
+		move_p_1_3_p_2_3
+		sensor-sensor-for-breeze_p_2_3-obs0-ver1
+		sensor-sensor-for-stench_p_2_3-obs0-ver1
+		invariant-at-least-one-216 ; (K_not_breeze_p_2_3)  ==> :precondition (and (not (K_pit_p_3_3)) (K_not_breeze_p_2_3)) :effect (K_not_pit_p_3_3))
+		invariant-at-least-one-214 ; (K_not_stench_p_2_3)  ==> :precondition (and (not (K_wumpus_p_3_3)) (K_not_stench_p_2_3)) :effect (K_not_wumpus_p_3_3))
+		invariant-at-least-one-238 ; (K_not_wumpus_p_3_3) (K_not_pit_p_3_3)  ==> :precondition (and (K_not_wumpus_p_3_3) (K_not_pit_p_3_3)) :effect (K_safe_p_3_3))
+		move_p_2_3_p_3_3
+		grab-gold_p_3_3
+		reach_new_goal_through_original_goal__
+
+
+	total:
+		>>> kp-action=move_p_1_1_p_1_2 [action=move_p_1_1_p_1_2]
+		>>> kp-action=move_p_1_2_p_1_3 [action=move_p_1_2_p_1_3]
+		>>> kp-action=move_p_1_3_p_2_3 [action=move_p_1_3_p_2_3]
+		>>> kp-action=move_p_2_3_p_3_3 [action=move_p_2_3_p_3_3]
+		>>> kp-action=grab-gold_p_3_3 [action=grab-gold_p_3_3]
+		>>> kp-action=reach_new_goal_through_original_goal__ [subgoaling action]
+
+
+	PLAN: init*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1
+		 0 : move_p_1_1_p_1_2
+		 0*: sensor-for-stench_p_1_1 sensor-for-breeze_p_1_1 sensor-for-stench_p_1_2 sensor-for-breeze_p_1_2
+		 1 : move_p_1_2_p_1_3
+		 1*: sensor-for-stench_p_1_3 sensor-for-breeze_p_1_3
+		 2 : move_p_1_3_p_2_3
+		 2*: sensor-for-stench_p_2_3 sensor-for-breeze_p_2_3
+		 3 : move_p_2_3_p_3_3
+		 3*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+		 4 : grab-gold_p_3_3
+		 4*: sensor-for-stench_p_3_3 sensor-for-breeze_p_3_3
+
+

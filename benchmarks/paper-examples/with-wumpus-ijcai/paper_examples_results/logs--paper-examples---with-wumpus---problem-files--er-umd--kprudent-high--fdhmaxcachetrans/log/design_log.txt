@@ -1,0 +1,45 @@
+
+Designing domain::/home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-a/domain.pddl
+template::/home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-a/template.pddl
+hyps::/home/sarah/Documents/gitrepos/UMD-APK/logs/logs--paper-examples---with-wumpus---problem-files--er-umd--kprudent-high--fdhmaxcachetrans/gen/parsed_hyps_0.dat
+budget::[0]
+method::bfd
+heuristic::NA
+pruning::None
+solver::/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src
+planner::fd:hmaxcachetrans
+compilation::kprudent-high
+
+----------------------
+cur_value::7 cur_node::<Node[]>hval:-1.00 cur_time::4.14515 cur_cost::0.000 best_node::<Node[]>hval:-1.00 best_value::7
+Total_best_value:7.00  best_node:<Node[]>hval:-1.00 cost:0.00 explored:1 time:4.153295 ex_terminated:False
+
+Designing domain::/home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-b/domain.pddl
+template::/home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-b/template.pddl
+hyps::/home/sarah/Documents/gitrepos/UMD-APK/logs/logs--paper-examples---with-wumpus---problem-files--er-umd--kprudent-high--fdhmaxcachetrans/gen/parsed_hyps_0.dat
+budget::[0]
+method::bfd
+heuristic::NA
+pruning::None
+solver::/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src
+planner::fd:hmaxcachetrans
+compilation::kprudent-high
+
+----------------------
+cur_value::5 cur_node::<Node[]>hval:-1.00 cur_time::22.19624 cur_cost::0.000 best_node::<Node[]>hval:-1.00 best_value::5
+Total_best_value:5.00  best_node:<Node[]>hval:-1.00 cost:0.00 explored:1 time:22.206708 ex_terminated:False
+
+Designing domain::/home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-c/domain.pddl
+template::/home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-c/template.pddl
+hyps::/home/sarah/Documents/gitrepos/UMD-APK/logs/logs--paper-examples---with-wumpus---problem-files--er-umd--kprudent-high--fdhmaxcachetrans/gen/parsed_hyps_0.dat
+budget::[0]
+method::bfd
+heuristic::NA
+pruning::None
+solver::/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src
+planner::fd:hmaxcachetrans
+compilation::kprudent-high
+
+----------------------
+cur_value::8 cur_node::<Node[]>hval:-1.00 cur_time::6.38733 cur_cost::0.000 best_node::<Node[]>hval:-1.00 best_value::8
+Total_best_value:8.00  best_node:<Node[]>hval:-1.00 cost:0.00 explored:1 time:6.393691 ex_terminated:False

@@ -1,0 +1,30 @@
+reading /home/sarah/Documents/gitrepos/UMD-APK/benchmarks/dataset-JAIR/paper-examples/with-wumpus/problem-files/wumpus-c/domain.pddl...
+reading /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--paper-examples---with-wumpus---problem-files--er-umd--kprudent-conformant--fdhmaxcachetrans/gen/problem_0.pddl...
+[35;1mstrongly-static predicates:[0m 'adj'
+instantiating action 'move' ... 48 action(s)
+instantiating action 'grab-gold' ... 16 action(s)
+instantiating sensor 'sensor-for-stench' ... 16 sensor(s)
+instantiating sensor 'sensor-for-breeze' ... 16 sensor(s)
+instantiating observables ... done
+instantiating stickies ... done
+instantiating p.o. problem...
+calculating 1 hidden state(s)
+preprocessing p.o. problem...
+creating KP translation...
+preprocessing KP translation...
+kp-instance (type=standard): #standard-actions=49, #sensor-actions=64, #invariant-actions=464, #subgoaling-actions=1
+Optimal planner:: fd:hmaxcachetrans
+solving problem for 1 hidden state(s)
+hidden[0]={gold_p_3_3,at_p_1_2,alive,safe_p_1_1,safe_p_1_2,stench_p_1_3,safe_p_1_3,stench_p_2_1,safe_p_2_1,stench_p_2_2,safe_p_2_2,wumpus_p_2_3,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3}
+>>> initial state={(K_gold_p_3_3),(K_at_p_1_2),(K_alive),(K_not_wumpus_p_1_1),(K_not_pit_p_1_1),(K_not_stench_p_1_2),(K_not_breeze_p_1_2),(K_safe_p_1_3),(K_not_wumpus_p_2_1),(K_not_pit_p_2_1),(K_not_wumpus_p_3_1),(K_not_pit_p_3_1),(K_not_wumpus_p_4_1),(K_not_pit_p_4_1),(K_not_wumpus_p_4_2),(K_not_pit_p_4_2),(K_not_wumpus_p_4_3),(K_not_pit_p_4_3),(K_not_at_p_1_1),(K_not_at_p_1_3),(K_not_at_p_1_4),(K_not_at_p_2_1),(K_not_at_p_2_2),(K_not_at_p_2_3),(K_not_at_p_2_4),(K_not_at_p_3_1),(K_not_at_p_3_2),(K_not_at_p_3_3),(K_not_at_p_3_4),(K_not_at_p_4_1),(K_not_at_p_4_2),(K_not_at_p_4_3),(K_not_at_p_4_4),(K_not_have-gold)}
+>>> initial hidden={gold_p_3_3,at_p_1_2,alive,safe_p_1_1,safe_p_1_2,stench_p_1_3,safe_p_1_3,stench_p_2_1,safe_p_2_1,stench_p_2_2,safe_p_2_2,wumpus_p_2_3,stench_p_3_1,safe_p_3_1,wumpus_p_3_2,stench_p_3_3,safe_p_3_3,safe_p_4_1,stench_p_4_2,safe_p_4_2,safe_p_4_3}
+before calling planner
+in classical get plan
+calling fd (n=1, acc-time=0)...
+FD planner config: fd:hmaxcachetrans
+ Command is/home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/fast-downward.py /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--paper-examples---with-wumpus---problem-files--er-umd--kprudent-conformant--fdhmaxcachetrans/gen/gen-d12919.pddl /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--paper-examples---with-wumpus---problem-files--er-umd--kprudent-conformant--fdhmaxcachetrans/gen/gen-p12919.pddl --search "astar(hmax(transform=no_transform(), cache_estimates=true))" >fd_output
+No solution
+after calling planner
+unable to solve problem: problem has no solution!
+stats: fd:hmaxcachetrans (planner) -1 (plan-size) 1 (planner-calls) 0.002304 (preprocessing-time) 0 (planner-time) 0 (planner-search-time) 0.138459 (instance-time) 0.140911 (total-acc-time)
+

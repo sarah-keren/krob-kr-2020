@@ -1,0 +1,27 @@
+2020-01-12 17:17:21,277 Running instance_id:paper-examples---with-wumpus---problem-files---wumpus-a-parsed_hyps_0.dat, utility:er-umd, design_budget:0, search_method_name:bfd, heuristic:NA, pruning_methods_name:None, solver_path:/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src, compilation:kprudent-conformant, planner_type:fd:hmaxcachetrans
+2020-01-12 17:17:21,278 Starting: best_first_design
+2020-01-12 17:17:21,278 best_first_design(node) node number 1 cur_node:<Node[]>hval:-1.00
+2020-01-12 17:17:21,278 Getting get_PO_cost: index:0
+2020-01-12 17:17:21,422 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.14
+2020-01-12 17:17:21,422 Getting get_FO_cost: index:0
+2020-01-12 17:17:21,426 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.00
+2020-01-12 17:17:21,426 InMethod best_first_design(node): explored_count:1 cur_node:<Node[]>hval:-1.00, node_eval_time:0.148, cur_value:88888.000, best_node:<Node[]>hval:-1.00, best_value:88888.000
+2020-01-12 17:17:21,426 Ending: best_first_design: {best_value:88888, best_node:<Node[]>hval:-1.00, explored_count:1, ex_terminated:False, calc_time:0.149}
+2020-01-12 17:17:44,493 Running instance_id:paper-examples---with-wumpus---problem-files---wumpus-b-parsed_hyps_0.dat, utility:er-umd, design_budget:0, search_method_name:bfd, heuristic:NA, pruning_methods_name:None, solver_path:/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src, compilation:kprudent-conformant, planner_type:fd:hmaxcachetrans
+2020-01-12 17:17:44,493 Starting: best_first_design
+2020-01-12 17:17:44,493 best_first_design(node) node number 1 cur_node:<Node[]>hval:-1.00
+2020-01-12 17:17:44,493 Getting get_PO_cost: index:0
+2020-01-12 17:17:44,697 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.20
+2020-01-12 17:17:44,698 Getting get_FO_cost: index:0
+2020-01-12 17:17:44,702 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.00
+2020-01-12 17:17:44,702 InMethod best_first_design(node): explored_count:1 cur_node:<Node[]>hval:-1.00, node_eval_time:0.209, cur_value:88888.000, best_node:<Node[]>hval:-1.00, best_value:88888.000
+2020-01-12 17:17:44,702 Ending: best_first_design: {best_value:88888, best_node:<Node[]>hval:-1.00, explored_count:1, ex_terminated:False, calc_time:0.209}
+2020-01-12 17:22:23,955 Running instance_id:paper-examples---with-wumpus---problem-files---wumpus-c-parsed_hyps_0.dat, utility:er-umd, design_budget:0, search_method_name:bfd, heuristic:NA, pruning_methods_name:None, solver_path:/home/sarah/Documents/gitrepos/UMD-APK/solvers/cp2fsc-and-replanner-prudent-and-original/src, compilation:kprudent-conformant, planner_type:fd:hmaxcachetrans
+2020-01-12 17:22:23,956 Starting: best_first_design
+2020-01-12 17:22:23,956 best_first_design(node) node number 1 cur_node:<Node[]>hval:-1.00
+2020-01-12 17:22:23,956 Getting get_PO_cost: index:0
+2020-01-12 17:22:24,101 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.14
+2020-01-12 17:22:24,101 Getting get_FO_cost: index:0
+2020-01-12 17:22:24,105 InMethod solve: index:0, has_solution:False, number_of_planner_calls:1, number_of_assumptions:0, plan_length:0, opop_plan_length=0, calc_time=0.00
+2020-01-12 17:22:24,105 InMethod best_first_design(node): explored_count:1 cur_node:<Node[]>hval:-1.00, node_eval_time:0.150, cur_value:88888.000, best_node:<Node[]>hval:-1.00, best_value:88888.000
+2020-01-12 17:22:24,106 Ending: best_first_design: {best_value:88888, best_node:<Node[]>hval:-1.00, explored_count:1, ex_terminated:False, calc_time:0.150}

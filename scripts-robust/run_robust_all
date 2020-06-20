@@ -1,0 +1,26 @@
+#!/bin/sh
+# run chmod u+x program_name to make the script executable 
+# $1 - problem files folder e.g. '../benchmarks/wumpus-clg/wumpus-running-example-grd/wumpus05'
+# $2 - solver_path ; the contingent solver e.g. '/PRP/planner-for-relevant-policies/src' or './solvers/cp2fsc-and-replanner-prudent/src'
+
+#Example  ./scripts/run_design_all grd ./benchmarks/dataset-test/wumpus/SetA 1 ./solvers/cp2fsc-and-replanner-prudent-and-original/src
+
+dir=$(dirname $(readlink -f "$0"))
+cur_dir=${PWD}
+
+for bm in $1/*;
+do	
+   for planner in 'FD:hmaxcachetrans';
+   do 
+					
+	for compilation in 'kp' 'kprudent' 'kprudent-high' 'kprudent-conformant';
+        do
+			       echo './scripts/run_design grd $bm/domain.pddl $bm/template.pddl $bm/hyps.dat $bm/design.pddl $bm/design_problem.pddl 0 'bfd' 'NA' 'NA' $2 $planner $compilation'
+			       echo '----------------------------------'
+				  ./scripts/run_design er-umd $bm/domain.pddl $bm/template.pddl $bm/hyps.dat $bm/design.pddl $bm/design_problem.pddl 0 'bfd' 'NA' 'NA' $2 $planner $compilation
+                        
+
+			
+	done
+   done 	
+done 

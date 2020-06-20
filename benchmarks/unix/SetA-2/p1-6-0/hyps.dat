@@ -1,0 +1,2 @@
+(fileindir myfile1 sub1)(fileindir myfile2 sub12)
+(fileindir myfile2 sub12)

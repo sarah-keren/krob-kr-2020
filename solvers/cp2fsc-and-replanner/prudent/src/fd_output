@@ -1,0 +1,146 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python /home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/builds/release/bin/translate/translate.py /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--benchmarks---dataset-test---freespace--fdhmaxcachetrans/gen/gen-d29011.pddl /home/sarah/Documents/gitrepos/UMD-APK/logs/logs--benchmarks---dataset-test---freespace--fdhmaxcachetrans/gen/gen-p29011.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.020s CPU, 0.022s wall-clock]
+Normalizing task... [0.010s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.010s CPU, 0.004s wall-clock]
+Generated 407 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+345 relevant atoms
+0 auxiliary atoms
+345 final queue length
+606 total queue pushes
+Completing instantiation... [0.000s CPU, 0.004s wall-clock]
+Instantiating: [0.010s CPU, 0.015s wall-clock]
+Computing fact groups...
+Finding invariants...
+101 initial candidates
+Finding invariants: [1.490s CPU, 1.490s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+76 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [1.490s CPU, 1.491s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.010s CPU, 0.007s wall-clock]
+240 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+101 operators removed
+0 axioms removed
+29 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.003s wall-clock]
+Reordering and filtering variables...
+26 of 63 variables necessary.
+0 of 1 mutex groups necessary.
+142 of 142 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 26
+Translator derived variables: 0
+Translator facts: 75
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 142
+Translator axioms: 0
+Translator task size: 626
+Translator peak memory: 88556 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [1.540s CPU, 1.541s wall-clock]
+
+translate exit code: 0
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/sarah/Documents/gitrepos/UMD-APK/solvers/Fast-Downward/builds/release/bin/downward --search 'astar(hmax(transform=no_transform(), cache_estimates=true))' --internal-plan-file sas_plan < output.sas
+reading input... [t=1.9445e-05s]
+done reading input! [t=0.000366994s]
+Simplifying 142 unary operators... done! [142 unary operators]
+time to simplify: 4.6377e-05s
+Initializing HSP max heuristic...
+Building successor generator...done! [t=0.00114159s]
+peak memory difference for successor generator creation: 0 KB
+time for successor generation creation: 3.0262e-05s
+Variables: 26
+FactPairs: 75
+Bytes per state: 4
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 7003
+[g=0, 1 evaluated, 0 expanded, t=0.00123689s, 22140 KB]
+f = 7003 [1 evaluated, 0 expanded, t=0.00125611s, 22140 KB]
+Initial heuristic value for hmax(transform = no_transform, cache_estimates = true): 7003
+pruning method: none
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 6003
+[g=1000, 2 evaluated, 1 expanded, t=0.00129797s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 5003
+[g=2000, 6 evaluated, 2 expanded, t=0.00134149s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 4003
+[g=3000, 8 evaluated, 3 expanded, t=0.00137465s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 4002
+[g=3001, 12 evaluated, 4 expanded, t=0.00141275s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 3002
+[g=4001, 18 evaluated, 5 expanded, t=0.0014649s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 3001
+[g=4002, 22 evaluated, 6 expanded, t=0.00149828s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 2001
+[g=5002, 25 evaluated, 7 expanded, t=0.00153304s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 2000
+[g=5003, 30 evaluated, 8 expanded, t=0.00156971s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 1000
+[g=6003, 33 evaluated, 9 expanded, t=0.00160241s, 22140 KB]
+New best heuristic value for hmax(transform = no_transform, cache_estimates = true): 0
+[g=7003, 35 evaluated, 10 expanded, t=0.00162968s, 22140 KB]
+Solution found!
+Actual search time: 0.000365812s [t=0.00164827s]
+down_x2_y4_y3  (1000)
+right_x2_x3_y3  (1000)
+right_x3_x4_y3  (1000)
+sensor-north-wall_x4_y3_y4-obs0-ver1  (1)
+up_x4_y3_y4  (1000)
+sensor-north-wall_x4_y4_y5-obs0-ver1  (1)
+up_x4_y4_y5  (1000)
+sensor-west-wall_x4_x3_y5-obs0-ver1  (1)
+left_x4_x3_y5  (1000)
+reach_new_goal_through_original_goal__  (1000)
+Plan length: 10 step(s).
+Plan cost: 7003
+Expanded 11 state(s).
+Reopened 0 state(s).
+Evaluated 35 state(s).
+Evaluations: 35
+Generated 622 state(s).
+Dead ends: 2 state(s).
+Expanded until last jump: 0 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 1 state(s).
+Generated until last jump: 0 state(s).
+Number of registered states: 35
+Int hash set load factor: 35/64 = 0.546875
+Int hash set resizes: 6
+Search time: 0.000446263s
+Total time: 0.00165096s
+Solution found.
+Peak memory: 22140 KB
+Remove intermediate file output.sas
+
+search exit code: 0
